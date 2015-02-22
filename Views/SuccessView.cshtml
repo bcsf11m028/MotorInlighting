@@ -1,0 +1,46 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title> Sign Up </title>
+
+    <link href="bootstrap.css" rel="stylesheet" />
+    <script src="bootstrap.js"></script>
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="application.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+
+
+</head>
+<body style="height:300px;width:300px">
+    
+    <h1 style="visibility:visible" id="heading">New Account has been added</h1>
+    <input type="submit" id="btn-signup" class="btn btn-info"  value="Ok"/>
+    <script>
+        function f2()
+        {
+            var a = document.getElementById("heading");
+            a.style.visibility = "hidden";
+        }
+
+        $(document).ready(function(){
+
+            
+                //var a = $('#email').val();
+                //var b = $('#fullname').val();
+                //var c = parseInt(a) + parseInt(b);
+            
+            $('#btn-ok').click(function () {
+                //$('#heading').style.visibility= .val(parseInt($('#email').val()) + parseInt($('#fullname').val()));
+                })
+            
+            
+        })
+    </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,91 @@
+﻿@model List<mvcProject.Models.Car>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>Car Information</title>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <script src="bootstrap.js"></script>
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <style type="text/css">
+        
+        .auto-style1
+        {
+            width: 231px;
+            height: 98px;
+        }
+    </style>
+
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+	    .list-group{
+		    width: 200px;
+	    }
+        .bs-example{
+    	    margin: 20px;
+        }
+    </style>
+
+
+</head>
+    
+<body id="myBody2" style="background-image:url('images/main-red-bg.jpg')">
+    <nav class="navbar navbar-inverse" role="navigation" style="background-color:black"  >
+            <div>
+                <div class="navbar-inner" style="background-color:black" >
+                   <!--  <div class="container" style="float:left">-->
+                       <img src="logo.jpg">
+
+                    <div class="navbar-header" style ="float:right;margin-top:120px">
+                        <a class ="navbar-brand" href ="/login/Login">Login</a>
+                    </div>
+                    <div class="navbar-header" style ="float:right;margin-top:120px">
+                            <a class ="navbar-brand" href ="/signUp/Signup">Sign Up</a>
+                    </div>
+                    <div class="navbar-header" style ="float:right;margin-top:120px">
+                        <a class="navbar-brand" href="http://facebook.com"><img src="facebook.jpg"/></a>
+                    </div>
+                    <div class="navbar-header" style ="float:right;margin-top:120px">
+                        <a class="navbar-brand" href="http://instragram.com"><img src="instagram.jpg"/></a>
+                    </div>
+                    <div class="navbar-header" style ="float:right;margin-top:120px">
+                        <a class="navbar-brand" href="http://twitter.com"><img src="twitter.jpg"/></a>
+
+                    </div>
+                    <div class="navbar-header" style ="float:right;margin-top:120px">
+                        <a class="navbar-brand" href="http://youtube.com"><img src="youtube.jpg"/></a>
+                    </div>
+                    <div class="navbar-header" style ="float:right;margin-top:120px">
+                        <a class="navbar-brand" href="http://gmail.com"><img src="gmail.jpg"/></a>
+                    </div>
+                </div>      
+            
+                
+            
+           </div>
+           
+        </nav>
+    <!-- --------------------------------------------end of navbar------------------------------------------ -->
+
+
+
+    <div class="bs-example">
+        <div id="listView" class="list-group" style="width:1300px; margin-left:15px">
+            @foreach(var s in Model)
+            {
+                //String str = @s.Id + "";
+                <a class="list-group-item active" href="/details/Details/@s.Id">Name :@s.Name       Price: @s.Price  </a>
+                @*<a class="list-group-item active" href="/details/Detais">Name :@s.Name       Price: @s.Price  </a>*@
+            }
+        </div>
+    </div>
+
+   
+</body>
+</html>
