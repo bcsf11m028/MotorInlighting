@@ -1,0 +1,84 @@
+﻿@{Layout = "~/Views/Shared/_Layout.cshtml";}
+
+@model mvcProject.Models.Car
+
+
+
+    <div>
+
+        
+            <div style="width:756px;height:1400px;float:left; margin-top:200px; margin-left:100px;background-color:white;margin-bottom:20px">
+                             
+                    <img id="myimg" src="@Model.ImagePath" style="width:750px" />
+                    
+                    <div style="margin-top:30px;width:700px; height:700px;margin-left:28px;border:groove" >
+
+                       <div class="container">
+                          
+                          <table class="table table-striped" style="width:650px">
+                                <thead>
+                                  <tr>
+                                    <th>Specs & Features</th>
+                                  </tr>
+                                </thead>
+                                
+                              <tbody>
+                                  <tr>
+                                  <td>Year <hr/></td>	
+                                      
+                                      <td> @Model.Year
+                                          
+                                      <hr/></td>
+                                      
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td>Transmission<hr/></td>
+                                      
+                                    <td>@Model.Transmition<hr/></td>
+                                  </tr>
+                @*                  <tr>
+                                      <td>CD Player<hr/></td>
+                                      <td>@Model.CD_Player<hr/></td> 
+                                  </tr>
+                *@                  <tr>
+                                      <td>Navigation<hr/></td> 
+                                      <td>@Model.Navigation<hr/></td>
+                                  </tr>
+                                  <tr>
+                                      <td>Speaker System<hr/></td> 
+                                      <td>@Model.Speaker<hr/></td>
+                                  </tr>
+                  @*                <tr>
+                                      <td>Air Bag<hr/></td>
+                                      <td>@Model.Air_Bag<hr/></td> 
+                                  </tr>
+                  *@                <tr>
+                                      <td>Key Alarm<hr/></td>
+                                      <td>@Model.Key_Alarm<hr/></td> 
+                                  </tr>
+
+
+                                  
+                                </tbody>
+
+                          </table>
+                        </div>
+
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+                    </div>
+                    
+            </div>
+
+            <div  style="width:400px;height:400px; margin-top:200px; margin-left:900px;background-color:white;position:fixed">
+
+                <h3 style="color:blue;text-align:center">@Model.Name</h3>
+                <h2 style="color:orangered;text-align:center">Price : @Model.Price PKR</h2>
+                <a href="http://olx.com"> <img src="Olx.jpg" style="width:380px;margin-left:10px;height: 200px"/></a>
+            </div>
+    
+        </div>
+

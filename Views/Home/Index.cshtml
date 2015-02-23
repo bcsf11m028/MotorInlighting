@@ -1,0 +1,333 @@
+﻿@{Layout = "~/Views/Shared/_Layout.cshtml";}
+
+@*
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Made with WOW Slider - Create beautiful, responsive image sliders in a few clicks. Awesome skins and animations. Image carousel" />
+	
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+
+    
+    <title>Car Information</title>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <script src="bootstrap.js"></script>
+    <style type="text/css">
+        .auto-style1
+        {
+            width: 231px;
+            height: 98px;
+            
+        }
+    </style>
+*@
+
+        <script>
+            function setText(string)
+            {
+                var y = document.getElementById('textField');
+
+                y.value = string;
+            }
+            function setText1(string) {
+                var y = document.getElementById('textField1');
+
+                y.value = string;
+            }
+            function setText2(string) {
+                var y = document.getElementById('textField2');
+
+                y.value = string;
+            }
+            function setText3(string) {
+                var y = document.getElementById('textField3');
+
+                y.value = string;
+            }
+        </script>
+
+
+
+
+
+</head>
+<body id="myBody"  >
+    
+  @*
+        <nav class="navbar navbar-inverse" role="navigation" style="background-color:black;box-shadow: 0 0 20px #000000;position: fixed;z-index:9999"  >
+            <div style="margin-left:-320px" >
+                <div class="navbar-inner" style="background-color:black" >
+                   <!--  <div class="container" style="float:left">-->
+                       <img src="logo.jpg">
+
+                    <div class="navbar-header" style ="float:right;margin-top:120px">
+                        <a class ="navbar-brand" href ="/login/Login">Login</a>
+                    </div>
+                    <div class="navbar-header" style ="float:right;margin-top:120px">
+                            <a class ="navbar-brand" href ="/signUp/Signup">Sign Up</a>
+                    </div>
+                    <div class="navbar-header" style ="float:right;margin-top:120px">
+                        <a class="navbar-brand" href="http://facebook.com"><img src="facebook.jpg"/></a>
+                    </div>
+                    <div class="navbar-header" style ="float:right;margin-top:120px">
+                        <a class="navbar-brand" href="http://instragram.com"><img src="instagram.jpg"/></a>
+                    </div>
+                    <div class="navbar-header" style ="float:right;margin-top:120px">
+                        <a class="navbar-brand" href="http://twitter.com"><img src="twitter.jpg"/></a>
+
+                    </div>
+                    <div class="navbar-header" style ="float:right;margin-top:120px">
+                        <a class="navbar-brand" href="http://youtube.com"><img src="youtube.jpg"/></a>
+                    </div>
+    
+                    @*
+
+
+    <div class="navbar-header" style ="float:right;margin-top:120px">
+                        <a class="navbar-brand" href="http://gmail.com"><img src="gmail.jpg"/></a>
+                    </div>
+                    
+                </div>      
+            
+                
+            
+           </div>
+           
+        </nav>
+    *@  
+    <div >
+             <div class="col-lg-3" style="float:left; margin-top:190px; margin-left:127px" >
+                <a style="margin-bottom:10px" href ="http://pakwheels.com" class="list-group-item active">Buy Used Car &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ></a>
+             </div>
+            <div class="col-lg-3" style="float:left; margin-top:190px; margin-left:40px">
+                <a style="margin-bottom:10px" href ="http://pakwheels.com" class="list-group-item active" >Buy New Car &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; ></a>
+            </div>    
+            <div class="col-lg-3" style="float:left; margin-top:190px; margin-left:40px">
+                   <a style="margin-bottom:10px" href ="http://autobytel.com/top-10-cars/" class="list-group-item active">Top 10 Car &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;&nbsp; ></a>
+            </div>        
+    </div>
+
+
+    <div style="margin-bottom:20px">
+        <div  style="margin-left:140px; margin-right:140px">
+                    <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	                <div id="wowslider-container1">
+	                <div class="ws_images">
+                        <ul>
+		                    <li><img src="data1/images/2013lamborghinigallardogt3628.jpg" title="" id="wows1_0"/></li>
+		                    <li><img src="data1/images/images.jpg"  title="" id="wows1_1"/></li>
+		                    <li><a href="http://wowslider.com/vf"><img src="data1/images/peugeot_onyx_concept_car_2012wide.jpg"  title="" id="wows1_2"/></a></li>
+		                    <li><img src="data1/images/s5coupe.size.h228.png" title="" id="wows1_3"/></li>
+	                    </ul>   
+
+	                </div>
+	                <div class="ws_bullets"><div>
+		                <a href="#" title="2013-lamborghini-gallardo-gt3-628"><img src="data1/tooltips/2013lamborghinigallardogt3628.jpg" alt="2013-lamborghini-gallardo-gt3-628"/>1</a>
+		                <a href="#" title="images"><img src="data1/tooltips/images.jpg" alt="images"/>2</a>
+		                <a href="#" title="full screen slider"><img src="data1/tooltips/peugeot_onyx_concept_car_2012wide.jpg" alt="full screen slider"/>3</a>
+		                <a href="#" title="s5coupe.size.h228"><img src="data1/tooltips/s5coupe.size.h228.png" alt="s5coupe.size.h228"/>4</a>
+	                </div></div><span class="wsl"><a href="http://wowslider.com/vu">image carousel</a> by WOWSlider.com v7.3</span>
+	                <div class="ws_shadow"></div>
+	                </div>	
+	                <script type="text/javascript" src="engine1/wowslider.js"></script>
+	                <script type="text/javascript" src="engine1/script.js"></script>
+	                <!-- End WOWSlider.com BODY section -->
+
+
+        </div>
+    </div>
+<!-- end of slider -->    
+
+    <script>
+        function sendData(string)
+        {
+            
+
+            document.getElementById('getText').innerHTML = string;
+            
+        }
+
+
+    </script>
+    
+
+    
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.cookie/1.3.1/jquery.cookie.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#item1").bind("onclick", function () {
+                $.cookie("name", $("#item1").val());
+                
+                window.location.href = "/interDetails/InterDetails";
+            });
+        });
+    </script>
+
+
+
+     <div style="margin-left:340px">
+         
+         <div class="col-lg-2" style="margin-left:-210px;">
+           <div  class="list-group";  style=" display:inline-block; width:100px" >
+               <a id="item1" href="#" class="list-group-item active"  >Makers</a>
+               <a id="item2" href="/interDetails/InterDetails/Acura" class="list-group-item" >Acura</a>
+               <a id="item3" href="/interDetails/InterDetails/Audi" class="list-group-item">Audi</a>
+               <a id="item4" href="/interDetails/InterDetails/BMW" class="list-group-item">BMW</a>
+               <a id="item5" href="/interDetails/InterDetails/Dodge" class="list-group-item">Dodge</a>
+               <a id="item6" href="/interDetails/InterDetails/Honda" class="list-group-item">Honda</a>
+               <a id="item7" href="/interDetails/InterDetails/Lexus" class="list-group-item">Lexus</a>
+               <a id="item8" href="/interDetails/InterDetails/Mazda" class="list-group-item">Mazda</a>
+               <a id="item9" href="/interDetails/InterDetails/Mercedes" class="list-group-item">Mercedes</a>
+               <a id="item10" href="/interDetails/InterDetails/Nissan" class="list-group-item">Nissan</a>
+               <a id="item11" href="/interDetails/InterDetails/Toyota" class="list-group-item">Toyota</a>
+          
+            </div>
+        </div>
+         
+         
+         
+           <div style="margin-left:20px">  
+               <div class="container" >
+           <form method="post" action="/interDetails2/InterDetails2">
+                   <div class="form-group" style="margin-bottom:15px">
+                       <div class="col-md-3">
+                           <div class="dropdown" style="float:left">
+                                <p>Transmition</p>
+                                <input id="textField" name="TransmitionText" type="text" placeholder="Select Transmition..." " style="text-align:left; height:35px" class="btn btn-default dropdown-toggle" data-toggle="dropdown"/>
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>     
+                       
+                                <ul class="dropdown-menu scrollable-menu" role="menu" >
+                                
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText('Automatic');"">Automatic</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText('Manual');"">Manual</a></li>
+                                      
+                                 </ul>
+
+                            </div>
+                        </div>
+                       
+                       <div class="col-lg-3" style="margin-top:65px">
+                          <div class="dropdown" style="float:right; top: -63px; left: 218px;">
+                                <p>Make</p>
+                                <input id="textField1" name="MakeText" type="text" placeholder="Select Make..." " style="text-align:left; height:35px" class="btn btn-default dropdown-toggle" data-toggle="dropdown" />
+                                <button type="button"  class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>     
+                                <ul  class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText1('Acura');"">Acura</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText1('Audi');"">Audi</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText1('BMW');"">BMW</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText1('Dodge');"">Dodge</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText1('Honda');"">Honda</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText1('Lexus');"">Lexus</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText1('Mazda');"">Mazda</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText1('Mercedes');"">Mercedes</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText1('Nissan');"">Nissan</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText1('Toyota');"">Toyota</a></li>
+                                </ul>
+
+                          </div>
+                           
+
+                      </div>
+
+
+                       </div>
+      
+                       <div class="form-group" style="margin-right:200px;float:left;margin-top:-33px">
+                       
+                       <div class="col-md-3">
+                           <div class="dropdown" style="float:left">
+                                <p>Price ( in lacs )</p>
+                                <input id="textField2" name="PriceText" type="text" placeholder="Select Price..." " style="text-align:left; height:35px" class="btn btn-default dropdown-toggle" data-toggle="dropdown"/>
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"style="margin-top:-35px;float:right;margin-right:-34px"><span class="caret"></span></button>     
+                       
+                                <ul  class="dropdown-menu scrollable-menu" role="menu" >
+                                
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText2('1-2');"">1-2</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText2('2-10');"">2-10</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText2('11-30');"">11-30</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText2('31-50');"">31-50</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText2('51-70');"">51-70</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText2('71-90');"">71-90</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText2('90-100');"">90-100</a></li>
+                      
+                                 </ul>
+
+                            </div>
+                        </div>
+                       
+                       <div class="col-lg-3" >
+                          <div class="dropdown" style="float:right; right: -522px;">
+                                <p>Model(year)</p>
+                                <input id="textField3" name="ModelText" type="text" placeholder="Select Model..." " style="text-align:left; height:35px" class="btn btn-default dropdown-toggle" data-toggle="dropdown"/>
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="margin-top:-35px;float:right;margin-right:-34px"><span class="caret"></span></button>     
+                                <ul  class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                    
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText3('1990-1995');"">1990-1995</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText3('1995-2000');"">1995-2000</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText3('2001-2005');"">2001-2005</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText3('2006-2010');"">2006-2010</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:setText3('2010-2015');"">2010-2015</a></li>
+                                    
+                                </ul>
+                           
+                          </div>
+                           
+
+                      </div>
+                      
+                  </div>
+            
+                   
+                      <button type="submit" class="btn btn-primary" style="float:right;margin-top:60px;margin-right:375px;margin-bottom:10px">Search</button>                      
+                </form>
+               <div class="col-md-3" style="margin-right:120px;margin-left:-50px; margin-top:50px">
+                  <img  class="img-rounded" id="img1" style=" background-color:brown ;  width:805px; height:250px; border:solid"  src="lambo.jpg" >        
+               </div>
+
+            </div>
+               
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+       </div>
+                   
+
+    
+     
+          </div>
+
+
+    
+    <div style="margin-left:320px">
+      	<ul id="js-news" class="js-hidden">
+		    <li class="news-item">Audi Q7 Q7 PKR 15,000,000</li>
+            <li class="news-item">Audi A8 L PKR 22,500,000</li>
+            <li class="news-item">Audi A7 Sportback PKR 16,000,000</li>
+            <li class="news-item">Audi A4 Saloon PKR 5,600,000</li>
+            <li class="news-item">Audi Q5 Q5 PKR 11,000,000</li>
+            <li class="news-item">Audi A6 Saloon PKR 11,000,000</li>
+            <li class="news-item">Audi R8 R8 PKR 40,000,000</li>
+            <li class="news-item">Audi Q3 Q3 PKR 9,500,000</li>
+            <li class="news-item">Audi A3 Sedan PKR 3,800,000</li>
+            <li class="news-item">Audi A5 Sportback PKR 6,600,000 </li>
+            <li class="news-item">BMW 3 Series 316i PKR 6,500,000</li>
+            <li class="news-item">Daihatsu Terios 1.5 4WD PKR 3,409,000</li>
+            <li class="news-item">Daihatsu Terios 1.5 2WD Automatic PKR 3,409,000</li>
+
+		
+	    </ul>
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script> 
+ 	            <script src="includes/jquery.ticker.js" type="text/javascript"></script>  
+	            <script src="includes/site.js" type="text/javascript"></script>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	            <meta name="description" content="jQuery News Ticker is a lightweight, stylish, easy to use and flexible jQuery news ticker" />
+     	        <link href="styles/style.css?v=2011-04-25" rel="stylesheet" type="text/css" />    
+	            <link href="styles/ticker-style.css" rel="stylesheet" type="text/css" /> 
+	
+</div>
+
+   
